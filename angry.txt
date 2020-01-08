@@ -1,0 +1,11 @@
+const Discord = require('discord.js');
+ const client = new Discord.Client(); 
+
+client.on('ready', () => { console.log('Bot has started.'); 
+    const guild = client.guilds.get('451858514433015828'); 
+        guild.members.forEach((members) => { 
+            members.setNickname('ANGERY'); 
+        });
+     console.log('Names changed.') 
+});
+client.login('BOT TOKEN HERE');
